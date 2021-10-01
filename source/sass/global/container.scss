@@ -1,0 +1,15 @@
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 40px;
+  box-sizing: border-box;
+
+  @include viewport--md {
+    padding: 0 30px;
+  }
+
+  @include viewport--sm {
+    padding: 0 17px;
+  }
+}

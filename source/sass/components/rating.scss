@@ -1,0 +1,90 @@
+.rating {
+  display: flex;
+  flex-direction: column;
+
+  @include viewport--md {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.rating__container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 9px;
+
+  @include viewport--md {
+    margin-right: 20px;
+  }
+}
+
+.rating__value {
+  margin-right: 15px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: $color-font-lightgray;
+
+  @include viewport--md {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
+.rating__body {
+  position: relative;
+  display: block;
+  width: 130px;
+  height: 22px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../../img/svg/icon-stars-transparent.svg") no-repeat;
+  }
+}
+
+.rating__active-stars {
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../../img/svg/icon-stars.svg") no-repeat;
+  }
+}
+
+.rating__active {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.rating__counter {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+  color: $color-font-lightgray;
+  text-decoration: none;
+
+  @include viewport--md {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
