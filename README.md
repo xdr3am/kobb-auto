@@ -1,3 +1,7 @@
+# Опубликованная версия
+
+<a href="https://xdr3am.github.io/kobb-auto/build/index.html">Нажать тут чтобы увидеть в интернетах</a>
+
 # Gulp template
 ## Основные команды для работы
 * Установка - `npm i`
